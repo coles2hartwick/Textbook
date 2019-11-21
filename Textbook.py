@@ -14,18 +14,10 @@ class Textbook:
         self.inventory = inventory
         self.price = price
 
+    def addinv(self, addition):
+        self.inventory = addition + self.inventory
+        return self.inventory
 
-def addinv(self, addition):
-    self.inventory = addition + self.inventory
-    if self.inventory < 5:
-        return "book inventory is less than 5"
-    else:
-        return
-
-
-def subtractinv(self, subtraction):
-    self.inventory = self.inventory - subtraction
-    if self.inventory < 5:
-        return "book inventory is less than 5"
-    else:
-        return
+    def subtractinv(self, subtraction):
+        self.inventory = self.inventory - subtraction
+        return self.inventory
