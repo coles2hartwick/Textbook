@@ -16,10 +16,10 @@ if answer == "inventory":
     if answer1 == "subtract":
         print("By how much?")
         answer2 = int(input())
-        Text1.subtractinv(answer2)
         if Text1.subtractinv(answer2) < 0:
             print("I'm sorry that would bring the inventory below zero")
         else:
+            Text1.subtractinv(answer2)
             print("The inventory is now " + str(Text1.inventory))
     elif answer1 == "add":
         print("By how much?")
@@ -48,10 +48,10 @@ if answer3 == "inventory":
     elif answer1 == "add":
         print("By how much?")
         answer2 = int(input())
-        Text2.addinv(answer2)
         if Text2.addinv(answer2) < 0:
             print("I'm sorry that would bring the inventory below zero")
         else:
+            Text2.addinv(answer2)
             print("The inventory is now " + str(Text1.inventory))
 elif answer3 == "price":
     print("What is the new price")
